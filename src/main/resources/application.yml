@@ -1,0 +1,7 @@
+micronaut:
+  application:
+    name: magix
+netty:
+  default:
+    allocator:
+      max-order: 3
