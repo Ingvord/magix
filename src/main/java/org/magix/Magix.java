@@ -5,10 +5,9 @@ import io.micronaut.http.MediaType;
 import io.micronaut.http.annotation.*;
 import io.micronaut.http.sse.Event;
 import io.reactivex.rxjava3.core.Flowable;
-import io.reactivex.rxjava3.processors.FlowableProcessor;
 import io.reactivex.rxjava3.processors.MulticastProcessor;
 
-@Controller("/magix")
+@Controller("/magix/api")
 public class Magix {
 
     private final MulticastProcessor<Event<String>> eventFlowableProcessor = MulticastProcessor.create();
